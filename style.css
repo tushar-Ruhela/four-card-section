@@ -1,0 +1,151 @@
+body{
+    background-color: hsl(0, 0%, 98%);
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+.header{
+    width: 400px;
+    margin: auto;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    
+
+}
+#heading{
+    font-weight: 100;
+    font-size: 30px;
+    color: hsl(234, 12%, 34%);
+    
+}
+#head2{
+    font-size: 30px;
+    margin-top: -20px;
+    color: hsl(234, 12%, 34%);
+}
+
+
+.about{
+font-size: 12px;
+text-align: center;
+align-items: center;
+
+}
+.grid-cont{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px ;
+    grid-template-rows: 110px 110px 110px 110px;
+    justify-content: center;
+    
+}
+.card{
+
+    height:180px;
+    width: 280px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color:hsl(0, 0%, 100%);
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow:  10px 10px 10px  hsl(229, 6%, 66%);
+    
+    
+}
+.card1{
+border-top: 4px solid hsl(180, 62%, 55%) ;
+grid-row:2/4;
+
+}
+.card2{
+    border-top: 4px solid hsl(0, 78%, 62%) ;
+    grid-column: 2;
+    }
+    .card3{
+        border-top: 4px solid hsl(34, 97%, 64%) ;
+        grid-row: 3/5;
+        grid-column: 2/3;
+        }
+        .card4{
+            border-top: 4px solid hsl(212, 86%, 64%) ;
+            grid-column: 3;
+            grid-row: 2/4;
+            }
+h6{
+    font-size: 14px;
+    margin-top: 18px;
+    margin-left: 18px;
+    color: hsl(234, 12%, 34%);
+}
+p{
+font-size: 10px;
+margin-top:-14px;
+margin-left: 18px;
+margin-right: 18px;
+color:hsl(229, 6%, 66%);
+}
+.logo{
+    height: 55px;
+    width: 55px;
+    margin-bottom: -50px;
+    margin-left: 200px;
+    
+}
+@font-face {
+    font-family:Poppins ;
+    src: url(design/Poppins-Regular.ttf);
+}
+@media screen and (max-width:600px) {
+    .header{
+        width:300px;
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+
+    }
+
+    #heading{
+        font-size: 20px;
+        margin: auto ;
+    }
+    #head2{
+        font-size: 20px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    
+    .grid-cont{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 800px;
+        grid-template-rows: 200px 200px 200px 200px; 
+        justify-content: center;
+            
+    }
+    .card{
+        margin: auto;
+    
+    }
+    .card1{
+    grid-column: 1;
+        grid-row:1/2;
+        
+        }
+        .card2{
+            
+            grid-column: 1;
+            grid-row: 2/3;
+            }
+            .card3{
+
+                grid-row: 3/4;
+                grid-column:1;
+                }
+                .card4{
+        
+                    grid-column: 1;
+                    grid-row: 4/5;
+                    }
+}
